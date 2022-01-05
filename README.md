@@ -1,9 +1,9 @@
 # Heart_failure_predictor
 
-##About
+## About
 A Web UI deployed Dense Neural Network Model Made using Tensorflow that predicts whether the patient is healthy or has chances of heart disease with probability.
 
-###Dataset
+### Dataset
 The Dataset used is the [Heart Failure Prediction](https://www.kaggle.com/fedesoriano/heart-failure-prediction) Dataset from kaggle.
 -Cardiovascular diseases (CVDs) are the number 1 cause of death globally, taking an estimated 17.9 million lives each year, which accounts for 31% of all deaths worldwide. Four out of 5CVD deaths are due to heart attacks and strokes, and one-third of these deaths occur prematurely in people under 70 years of age. Heart failure is a common event caused by CVDs and this dataset contains 11 features that can be used to predict a possible heart disease.
 -People with cardiovascular disease or who are at high cardiovascular risk (due to the presence of one or more risk factors such as hypertension, diabetes, hyperlipidaemia or already established disease) need early detection and management wherein a machine learning model can be of great help.
@@ -16,7 +16,7 @@ https://user-images.githubusercontent.com/69198671/148185697-dff226fd-c365-4f53-
 
 >To run this ui open the directory in command terminal and use the command `streamlit run interface.py`
 
-#####Attribute Information
+##### Attribute Information
 -Age: age of the patient (years)
 -Sex: sex of the patient (M: Male, F: Female)
 -ChestPainType: chest pain type (TA: Typical Angina, ATA: Atypical Angina, NAP: Non-Anginal Pain, ASY: Asymptomatic)
@@ -30,7 +30,7 @@ https://user-images.githubusercontent.com/69198671/148185697-dff226fd-c365-4f53-
 -ST_Slope: the slope of the peak exercise ST segment (Up: upsloping, Flat: flat, Down: downsloping)
 -HeartDisease: output class (1: heart disease, 0: Normal)
 
-###DNN Model (Keras)
+### DNN Model (Keras)
 The model is used is shown in the codeblock below:
 
 '''
@@ -61,7 +61,7 @@ Age Feature is bucketized. Whereas all other numerical features are passed as nu
 The model has an accuracy of approximately 98% on Test Dataset and AUC(area under roc curve) of 1.00.
 The model training is visualized in Tensorboard.
 
-###About files in repo
+### About files in repo
 -`pred_model.ipynb`: Jupyter Notebook of the code used to build the DNN and exploratory data analysis using pandas,matplotlib and seaborn
 -`interface.py`: Used to run the website for interactive UI
 -`model_py.py`: DNN Model code available in .py format
