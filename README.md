@@ -51,10 +51,10 @@ model.compile(optimizer = tf.keras.optimizers.Adam(learning_rate=0.001),loss ='b
 ```
 
 The model is very dense and the dataset is small, so as to avoid overfitting various regularization methods are used like:
--Batch Normalization
--Dropout Layers
--L2 Regularization
--Early Stopping Callback
+- Batch Normalization
+- Dropout Layers
+- L2 Regularization
+- Early Stopping Callback
 
 Feature Columns are used and datasets are of converted into tf.data.Dataset type for faster processing.
 Age Feature is bucketized. Whereas all other numerical features are passed as numerical feature columns. Categorical as categorical feature columns.
