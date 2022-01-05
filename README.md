@@ -1,4 +1,4 @@
-# Heart_failure_predictor
+# Heart Failure Predictor
 
 ## About
 A Web UI deployed Dense Neural Network Model Made using Tensorflow that predicts whether the patient is healthy or has chances of heart disease with probability.
